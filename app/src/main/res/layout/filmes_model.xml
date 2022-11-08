@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="27dp">
+
+        <ImageView
+            android:id="@+id/fita"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/fita_vhs" />
+
+        <TextView
+            android:id="@+id/nome_filme"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/fita"
+            android:gravity="bottom"
+            android:text="Filme"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nome_genero"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/fita"
+            android:gravity="bottom"
+            android:text="Gênero"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/nome_ano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fita"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/fita"
+            android:text="Ano"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:background="@drawable/botao_azul"
+            android:fontFamily="sans-serif"
+            android:text="Editar"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnExcluir"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/botao_branco"
+            android:fontFamily="sans-serif"
+            android:text="Excluir"
+            android:textAllCaps="false"
+            android:textColor="#089CDB"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
